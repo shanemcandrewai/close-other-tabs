@@ -8,9 +8,7 @@
   "background": { "scripts": ["close_other_tabs.js"] },
   "commands": {
     "toggle-feature": {
-      "suggested_key": {
-	"default": "Ctrl+Space"
-      },
+      "suggested_key": { "default": "Ctrl+Space" },
       "description": "Close other tabs"
     }
   }
