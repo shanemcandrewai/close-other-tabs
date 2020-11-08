@@ -1,0 +1,29 @@
+{
+
+  "manifest_version": 2,
+  "name": "Close other tabs",
+  "version": "1.0",
+
+  "description": "Close other tabs",
+
+  "icons": {
+    "48": "icons/twotone_adb_black_18dp.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["close_other_tabs.js"]
+    }
+  ],
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": {
+	"default": "Ctrl+Shift+Y",
+	"linux": "Ctrl+Shift+U"
+      },
+      "description": "Send a 'toggle-feature' event"
+    }
+  }
+
+}
