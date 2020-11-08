@@ -7,22 +7,19 @@
   "description": "Close other tabs",
 
   "icons": {
-    "48": "icons/twotone_adb_black_18dp.png"
+    "48": "icons/close48x48.png"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["close_other_tabs.js"]
-    }
-  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+
   "commands": {
     "toggle-feature": {
       "suggested_key": {
-	"default": "Ctrl+Shift+Y",
-	"linux": "Ctrl+Shift+U"
+	"default": "Ctrl+Alt+Space"
       },
-      "description": "Send a 'toggle-feature' event"
+      "description": "Close other tabs"
     }
   }
 
