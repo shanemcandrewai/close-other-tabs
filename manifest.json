@@ -2,14 +2,14 @@
   "name": "Close other tabs",
   "description": "Close other tabs",
   "manifest_version": 2,
-  "version": "1.0",
-  "icons": { "48": "icons/close48x48.png" },
+  "version": "1.1",
+  "icons": { "48": "icons/folder48.png" },
   "permissions": [ "tabs" ],
   "background": { "scripts": ["close_other_tabs.js"] },
-  "commands": {
-    "toggle-feature": {
-      "suggested_key": { "default": "Ctrl+Space" },
-      "description": "Close other tabs"
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/folder16.png",
+      "32": "icons/folder32.png"
     }
   }
 }
