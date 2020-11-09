@@ -5,6 +5,7 @@ See [Browser Extensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-on
 ## Packaging the extension
 ### Linux
 update version number in [manifest.json](manifest.json)
+
     zip -r -FS ../close_other.zip manifest.json close_other_tabs.js icons
 #### List members of achive
     less close_other.zip
